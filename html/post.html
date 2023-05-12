@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <script src="https://kit.fontawesome.com/6727a0cafe.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comme:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/post.css">
+</head>
+<body>
+    <header id="header">
+        <div id="logodiv">
+            <a href="../index.html">
+                <h1 id="logoText">ScriBBler</h1>
+                <div id="subheadingText">
+                   <h3>Explore,</h3>
+                   <h3>Imagine,</h3>
+                   <h3>Create</h3>
+                </div>
+            </a>  
+        </div>
+        <div id="buttons">
+          <button id="signupBtn" onclick="SignupModal()">Sign Up</button>
+          <button id="signinBtn" onclick="SigninModal()">Sign In</button>
+        </div>
+    </header>
+    <main>
+        
+        <!-- Signup modal -->
+        <div id="signupModal" class="modal">
+          <!-- Modal content -->
+          <div class="signupmodal-content">
+            <form>
+              <div id="formheading">
+                  <h1>Get Started</h1> 
+                  <h1 class="close" onclick="closeModal()">&times;</h1>       
+              </div>
+              <hr>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              <label for="username">Username</label>
+              <input type="text" id="username" placeholder="Enter your username" required>
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Enter your password" required>
+              <label for="confirmpassword">Confirm Password</label>
+              <input type="password" id="confirmpassword" placeholder="Re-enter your password" required>
+              <button type="submit" id="formsignbtn">Sign Up</button>
+            </form>
+          </div>
+        <!-- sign up Modal content ends here...-->
+        </div>
+      <!-- Signup modal ends here...-->
+      <!-- Sign in modal -->
+      <div id="signinModal" class="modal">
+          <!-- Modal content -->
+          <div class="signinmodal-content">             
+            <form>
+              <div id="formheadingsignin">
+                  <h1>Welcome Back!</h1> 
+                  <h1 class="close" onclick="closeModal()">&times;</h1>       
+              </div>
+              <hr>
+              <label for="username">Username</label>
+              <input type="text" id="username" placeholder="Enter your username" required>
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="Enter your password" required>
+              <button type="submit" id="formsignbtnsignin">Sign In</button>
+              <div id="formfootercontent">
+                  <p>Not a number??</p>
+                  <p onclick="displaySignupModal()">Sign Up</p>       
+              </div>
+            </form>
+          </div>
+           <!-- Modal content ends here... -->
+        </div>
+        <!-- signin modal ends here... -->
+          <!--post contents starts here...  -->
+          <div class="postContainer">
+            <div class="postTitle" contentEditable="false">
+              <h3>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</h3>
+          </div>
+            <div class="authorEditBtnContainer">
+                <p class="postAuthor">Srishti Gupta</p>
+                <button type="button" class="editBtn"  id="editPostButton" onclick="EditSave()">Edit
+                  <i class="fa-solid fa-pen-to-square"></i>
+                </button>
+            </div>
+            <div class="postText" contentEditable="false">
+                Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.
+            </div>
+        
+        <!-- post contents ends here... -->
+        <!-- like post starts here... -->
+        <div class="likePost">
+          <button id="likePostBtn" onclick="postCounts()">
+              <i class="fa fa-thumbs-up"></i>Like
+          </button>
+          <span id="likesCount">Be the first one to like this!</span>
+      </div>
+       <!--like post ends here...  -->
+
+       <!-- comments post starts here... -->
+      <div>
+        <form class="commentForm">
+            <label for="commentText"></label>
+            <textarea placeholder="Leave a comment..." id="commentText" rows="5" name="Content"></textarea><br>
+            <button type="button" class="commentBtn" onClick="addComments()">Comment</button>
+        </form>
+
+        <p class="allCommentsHeading">All Comments</p>
+        <div id="allCommentsBox">
+            <!-- all comments are added here dynamically -->
+            <!-- here we add comments through js -->
+        </div>
+    </div>
+    <!-- comments post ends here... -->
+   </div>
+</body>
+<script src="../scripts/common.js"></script>
+<script src="../scripts/post.js"></script>
+</html>

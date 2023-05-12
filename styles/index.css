@@ -1,0 +1,81 @@
+body{
+    background: url('../images/background.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+    } 
+
+#centerBtns{
+    display: flex;
+    gap: 1em;
+    height: 30rem;
+    width: 84rem;
+    justify-content: center;
+    align-items: center;
+}
+#allpostBtn, #createpostBtn{
+    background-color: rgb(246, 231, 117);
+    border: solid white ;
+    border-style: outset;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    color: #000;
+    cursor: pointer;
+}
+#allpostBtn>a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* creatPost modal css starts here... */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+#creatPostHeading{
+    display: flex;
+    justify-content: space-evenly;
+    gap:27rem;
+}
+#creatPostHeading>h1{
+    font-weight: lighter;
+}
+form>hr {
+    margin-top: -10px;
+    width: 96%;
+}
+#contentTextContent{
+    margin: 0.5rem;
+    background-color: #e4e2e2;
+    border: none;
+}
+
+#createBtn{
+    margin: 1rem 18rem;
+    background-color: rgb(7, 199, 7);
+    color: #fff;
+    padding: 10px;
+    border: none;
+}
+#creatPostHeading>.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  #creatPostHeading>.close:hover,
+  #creatPostHeading>.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

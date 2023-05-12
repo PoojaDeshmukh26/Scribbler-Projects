@@ -1,0 +1,108 @@
+a{
+    text-decoration: none;
+    color: blue;
+}
+#subheadingText{
+    color: #cb8ffc;
+}
+.postContainer{
+    margin: 0px 30px 30px 30px;
+    /* border: 1px solid red; */
+}
+.postTitle{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.authorEditBtnContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.postAuthor{
+    font-family: Arial, Helvetica, sans-serif,cursive;
+    font-weight: bold;
+    font-size: 16px;
+}
+.editBtn{
+    width: 80px;
+    padding: 0px 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    background: #ed2553;
+    color: #fff;
+    float: right;
+    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+    outline: none;
+    border: none;
+}
+.fa-edit,
+.fa-save {
+    padding-left: 6px;
+}
+
+.fa-thumbs-up {
+    margin-right: 5px;
+}
+#postText {
+    font-size: 18px;
+    text-align: justify;
+}
+.likePost{
+    margin-top: 25px;
+    
+}
+#likePostBtn{
+    width: 80px;
+    display: block;
+    background: #ed2553;
+    color: #ffffff;
+    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin: 10px;
+    margin-left: -1px;
+}
+#likesCount{
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif, monospace;
+    font-size: 13px;
+}
+.commentForm {
+    width: 100%;
+    margin: 20px 0;
+    float: left;
+    /* border: 1px solid rgb(16, 224, 58); */
+}
+
+#commentText {
+    width: 70%;
+}
+.commentBtn{
+    width: 100px;
+    background-color: #ed2553;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 20px -8px rgb(240, 75, 113);
+    outline: none;
+    border: none;
+    margin-top: -5px;
+}
+.allCommentsHeading{
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif, monospace;
+}
+#allCommentsBox{
+    display: none;
+    background-color: #e2e4e6;
+    padding: 10px 10px;
+    width: 70%;
+    
+}
